@@ -74,8 +74,8 @@ form.addEventListener('submit', function (e) {
     mensaje: input.message.value
   }
 
-  const URL = 'https://formsubmit.co/ajax/'
-  const email = 'your-email-here@email.com'
+  const URL = 'https:formsubmit.co/el/kivinu'
+  const email = 'jaimediazzz2000@gmail.com'
 
   // CRUD -> Create, Read, Update, Delete
   // verbos:  POST,   GET,  PUT,    DELETE
