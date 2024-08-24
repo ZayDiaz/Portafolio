@@ -61,8 +61,10 @@
           <h1 class="hero__title">Soy Jaime Diaz<span class="span__dot">.</span></h1>
           <p class="hero__text">"Soy un desarrollador web junior con experiencia en HTML, CSS y Javascript basico</p>
 
-          <button id="cv" class="hero__btn" type="button">Descargar CV</button>
-            
+          <a href="https://github.com/ZayDiaz" target="_blank">
+          <button id="cv" class="hero__btn" type="button"  >Leer hoja personal de github</button>
+          </a>
+
         </div>
       </div>
     </section>
@@ -249,31 +251,42 @@
       <h2 class="section__title">Contacto<span class="span__dot">.</span></h2>
 
       <div class="container">
-        <form id="form" class="contact__form" action="https://formsubmit.co/jaimediazzz2000@gmail.com" method="post">
+        <form id="form" class="contact__form" action="https://formsubmit.co/diazcompanycode@protonmail.com" method="POST">
+          <!-- Campo para la protección contra bots -->
+          <input type="text" name="_honeypot" style="display:none">
+      
+          <!-- URL de redirección después de un envío exitoso -->
+          <input type="hidden" name="_next" value="https://zaydiaz.github.io/Portafolio/">
+      
+          <!-- Configuración adicional -->
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde tu formulario web">
+          <input type="hidden" name="_captcha" value="true">
+      
           <div class="label__input">
-            <label for="name"><i class='bx bxs-user'></i></label>
-            <input type="text" id="name" placeholder="Nombre" name="name">
+              <label for="name"><i class='bx bxs-user'></i></label>
+              <input type="text" id="name" placeholder="Nombre" name="name" required>
           </div>
-
+      
           <div class="label__input">
-            <label for="email"><i class='bx bx-at'></i></label>
-            <input type="email" id="email" placeholder="Correo" name="email">
+              <label for="email"><i class='bx bx-at'></i></label>
+              <input type="email" id="email" placeholder="Correo" name="email" required>
           </div>
-
+      
           <div>
-            <label for="message">Mensaje</label> <br>
-            <textarea name="message" id="message" rows="10"></textarea>
+              <label for="message">Mensaje</label> <br>
+              <textarea name="message" id="message" rows="10" required></textarea>
           </div>
-
+      
           <button class="contact__btn" type="submit">Enviar</button>
-
-          <p class="message--success hidden">Tu mensaje se envio correctamente</p>
-          <p class="message--error hidden">Hubo un error al enviar el mensaje</p>
-
-        </form>
+          <p class="nota"><span>NOTA: </span>Antes de enviar el formulario, por favor verifica que todos los datos proporcionados sean correctos. Asegúrate de que tu nombre, correo electrónico y mensaje estén bien escritos para evitar errores en la comunicación. ¡Gracias!</p>
+      <!--
+          <p class="message--success hidden">Tu mensaje se envió correctamente</p>
+          <p class="message--error hidden">Hubo un error al enviar el mensaje</p>-->
+      </form>
+      
       </div>
     </section>
-    <!---->
+    <!-- 
     <section id="portfolio" class="section portfolio">
       <div class="main">
         <div class="up">
@@ -294,6 +307,7 @@
         </div>
       </div>
     </section>
+    -->
   </main>
 
   <footer class="footer">

@@ -242,6 +242,15 @@ main {
   font-size: 28px;
   color: #A91D3A;
 }
+span{
+  margin: 0 4px 0 4px ;
+  font-weight: 700;
+}
+.nota{
+  border: 3px solid rgba(17, 17, 17, 0.877);
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, 0.39);
+}
 
 /* Loader */
 .loader {
